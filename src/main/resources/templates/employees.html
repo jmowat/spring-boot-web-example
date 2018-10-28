@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>List Employees</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <link rel="stylesheet" href="/webjars/bootstrap/4.1.3/css/bootstrap.min.css">
+	<script src="/webjars/jquery/3.0.0/jquery.min.js"></script>
+	<script src="/webjars/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="webjars/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+            <h2>Employees</h2>
+            <!--Search Form -->
+            
+            
+            <!--Employees List-->
+                          
+                    <div th:if="${not #lists.isEmpty(employees)}">
+                        <table  class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <td>#</td>
+                                    <td>Name</td>
+                                    <td>Last name</td>
+                                    <td>Birth date</td>
+                                    <td>Role</td>
+                                    <td>Department</td>
+                                    <td>E-mail</td>                                 
+                                </tr>
+                            </thead>
+
+                                <tr class="${classSucess}" th:each="employee : ${employees}">
+                                    <td th:text="${employee.id}"></td>
+                                    <td th:text="${employee.name}"></td>
+                                    <td th:text="${employee.lastName}"></td>
+                                    <td th:text="${employee.birthDate}"></td>
+                                    <td th:text="${employee.role}"></td>
+                                    <td th:text="${employee.department}"></td>
+                                    <td th:text="${employee.email}"></td>   
+                                   
+                                </tr>
+               
+                        </table>  
+            
+           
+        </div>
+</body>
+</html>

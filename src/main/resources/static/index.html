@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />    
+	<link rel="stylesheet" href="/webjars/bootstrap/4.1.3/css/bootstrap.min.css">
+	<script src="/webjars/jquery/3.0.0/jquery.min.js"></script>
+	<script src="/webjars/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="webjars/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <p>Get your greeting <a href="/greeting">here</a></p>
+    <p>Get the time of day <a href="/timeOfDay">here</a></p>
+    
+    <div class="container">
+        <table class="table table-striped table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Description</th>
+                    <th>Target Date</th>
+                    <th>Is it Done?</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>Todo 1</td>
+                        <td>10/12/2017</td>
+                        <td>No</td>
+                        <td><a class="btn btn-warning" href="/edit-todo">Edit Todo</a></td>
+                        <td><a class="btn btn-warning" href="/delete-todo">Delete Todo</a></td>
+                    </tr>
+                    <tr>
+                        <td>Todo 2</td>
+                        <td>10/12/2017</td>
+                        <td>No</td>
+                        <td><a class="btn btn-warning" href="/edit-todo">Edit Todo</a></td>
+                        <td><a class="btn btn-warning" href="/delete-todo">Delete Todo</a></td>
+                    </tr>
+                    <tr>
+                        <td>Todo 3</td>
+                        <td>10/12/2017</td>
+                        <td>No</td>
+                        <td><a class="btn btn-warning" href="/edit-todo">Edit Todo</a></td>
+                        <td><a class="btn btn-warning" href="/delete-todo">Delete Todo</a></td>
+                    </tr>
+            </tbody>
+        </table>
+        <div>
+            <a class="btn btn-primary" href="/add-todo">Add a Todo</a>
+            
+        </div>
+    </div>
+</body>
+</html>
